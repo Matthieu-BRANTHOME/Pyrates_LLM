@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtualenv
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Data
+data/cleaned/*
+data/interim/*
+
+# Outputs
+outputs/*
+
+# OS / Editor
+.DS_Store
+*.swp
+*.swo
+
+# Debug
+debug/*
