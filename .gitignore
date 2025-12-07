@@ -11,17 +11,21 @@ __pycache__/
 # VSCode
 .vscode/
 
-# Data
+# Data - ignore all files but keep folders
 data/cleaned/*
+!data/cleaned/.gitkeep
 data/interim/*
+!data/interim/.gitkeep
 
-# Outputs
+# Outputs - ignore all files but keep folder
 outputs/*
+!outputs/.gitkeep
+
+# Debug - ignore all files but keep folder
+debug/*
+!debug/.gitkeep
 
 # OS / Editor
 .DS_Store
 *.swp
 *.swo
-
-# Debug
-debug/*

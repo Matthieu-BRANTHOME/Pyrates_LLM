@@ -1,11 +1,11 @@
-# Environment Setup
+# 1/ Environment Setup
 
-## Prerequisites
+## 1.1/ Prerequisites
 - VSCode with the "Jupyter" extension (Microsoft)
 - Python 3.12
 - Git
 
-## Installation Steps
+## 1.2/ Installation Steps
 
 1/ **Clone the repository**
 ```bash
@@ -38,20 +38,20 @@ pip install -r requirements.txt
 - Click on "Select Kernel" in the top right corner
 - Choose the `.venv` interpreter
 
-# Execution
+# 2/ Execution
 
 Execute the notebooks sequentially in numerical order (i.e., `01_*.ipynb`, `02_*.ipynb`, etc.)
 
-# Development Guidelines
+# 3/ Development Guidelines
 
-## Adding Dependencies
+## 3.1/ Adding Dependencies
 When installing new packages (in venv):
 ```bash
 pip install <package-name>
 pip freeze > requirements.txt
 ```
 
-## Before Committing
+## 3.2/ Before Committing
 
 **Always perform these checks:**
 
@@ -66,7 +66,7 @@ pip freeze > requirements.txt
    jupyter nbconvert --clear-output --inplace notebooks/*.ipynb
 ```
 
-## Git Workflow
+## 3.3/ Git Workflow
 ```bash
 # Create a feature branch
 git checkout -b feature/<your-feature-name>
@@ -82,9 +82,9 @@ git push origin feature/your-feature-name
 ```
 Then create a Pull Request for review (via GitHub or VSCode "GitHub Pull Requests" extension)
 
-# Project architecture
+# 4/ Project architecture
 
-## Global
+## 4.1/ Global
 
 - `asset/*` > Graphic resources used for notebook presentation
 - `data/cleaned/*` > Cleaned data usable for manual verification with a spreadsheet tool
@@ -98,14 +98,14 @@ Then create a Pull Request for review (via GitHub or VSCode "GitHub Pull Request
 - `README.md` > Project documentation
 - `requirements.txt` > File containing the project's Python dependencies
 
-## Notebooks
+## 4.2/ Notebooks
 
 - `notebooks/01_data_cleaning.ipynb` > Cleaning and filtering of raw data
 - `notebooks/02_analysis_axis_1.ipynb` > Analyses related to axis 1: impact of the digital assistant on the learner
 - `notebooks/03_analysis_axis_2.ipynb` > Analyses related to axis 2: usage of the digital assistant by learners
 - `notebooks/04_analysis_axis_3.ipynb` > Analyses related to axis 3: evaluation of feedback content
 
-## Constants
+## 4.3/ Constants
 
 - `src/interaction_constants.py` > Constants defining column names and values for interaction trace data
 - `src/session_date_constants.py` > Constants defining the dates of the different experimental sessions
