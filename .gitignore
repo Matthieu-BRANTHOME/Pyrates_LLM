@@ -25,6 +25,9 @@ outputs/*
 debug/*
 !debug/.gitkeep
 
+# Export of notebooks
+exports/*
+
 # OS / Editor
 .DS_Store
 *.swp
