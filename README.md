@@ -59,11 +59,10 @@ pip freeze > requirements.txt
    - Restart kernel and run all cells in each notebook
    - Ensure no errors occur
 
-2/ **Clear all outputs**
-   - In VSCode: `Cell` → `Clear All Outputs` for each notebook
-   - Or use command line:
+2/ **Clear all outputs and metadata**
+   - In venv terminal type:
 ```bash
-   jupyter nbconvert --clear-output --inplace notebooks/*.ipynb
+   nbstripout notebooks/*.ipynb
 ```
 
 ## 3.3/ Git Workflow
